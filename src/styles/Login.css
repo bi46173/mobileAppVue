@@ -1,0 +1,79 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.login-container .row-container {
+  width: 100%;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+form {
+  width: 100%;
+}
+.form {
+  margin-top: 25%;
+  flex-direction: column;
+}
+.form .app-input {
+  position: relative;
+  width: 100%;
+  margin: 20px 10px;
+}
+.form input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 25px;
+  margin-bottom: 5px;
+}
+.form input:focus {
+  outline: none;
+  border-bottom: 1px solid #fc055e;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.forgot-password p {
+  color: #fc055e;
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.no-account {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  gap: 5px;
+}
+.no-account p a {
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.no-account p {
+  color: #c3c3c3;
+}
+.no-account a {
+  color: #fc055e;
+  text-decoration: none;
+  cursor: pointer;
+}

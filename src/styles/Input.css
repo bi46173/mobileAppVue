@@ -1,0 +1,37 @@
+.app-input input:focus ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #fc055e;
+}
+.app-input label {
+  position: absolute;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.app-input .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.app-input .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.app-input input:focus ~ .underline:before,
+.app-input input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+input.error {
+  border-bottom: 1px solid #fc055e !important;
+}
+span.error {
+  color: #fc055e;
+}
